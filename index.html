@@ -3,8 +3,660 @@
 <head>
 	<meta charset="UTF-8">
 	<title>海尔商城首页</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper-4.3.2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
+<!-- header -->
+<div class="h">
+	<div class="header">
+		<div class="header-a">
+			<a href="#">登录</a>
+			<span>|</span>
+			<a href="#">免费注册</a>
+			<span>|</span>
+			<a href="#">我的海尔</a>
+			<span>|</span>
+			<a href="#">顺逛微店</a>
+			<span>|</span>
+			<a href="#">互动社区</a>
+			<span>|</span>
+			<a href="#">知识堂</a>
+			<span>|</span>
+			<a href="#">帮助中心</a>
+			<span>|</span>
+			<a href="#">企业购</a>
+			<span>|</span>
+			<a href="#">海尔官网</a>
+			<span>|</span>
+			<a href="#">好品海质</a>
+			<span>|</span>
+			<a href="#">商户平台</a>
+		</div>
+	</div>
+</div>
+<!-- banner	 -->
+<div class="ban">
+	<div class="banner">
+		<div class="banner-left">
+			<img src="img/loge.png" alt="">
+		</div>
+		<div class="banner-center">
+			<form>
+				<input type="text" id="banner-input" placeholder="【微店主特权日】"/>
+				<input type="button" class="btn"/>
+			</form>
+			<div class="banner-center-bottom">
+				<a href="#" class="banner-href">空调</a>
+				<a href="#">618直选攻略</a>
+				<a href="#">冰箱</a>
+				<a href="#">滚筒洗衣机</a>
+				<a href="#">热水器</a>
+				<a href="#">冰柜</a>
+				<a href="#">净水机</a>
+			</div>
+		</div>
+		<div class="banner-right">
+			<div class="banner-right-one">
+				<span><img src="img/banner-bg.png" alt=""></span>
+				<a href="#">我的购物车</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- nav -->
+<div class="nav">
+	<div class="nav-header">
+		<div class="nav-left">
+			<a href="#">商品分类</a>
+			<span><img src="img/nav-bg.png" alt=""/></span>
+		</div>
+		<div class="nav-one">
+			<a href="#">首页</a>
+			<a href="#">有好货</a>
+			<a href="#">抢鲜货</a>
+			<a href="#">领券中心</a>
+			<a href="#">会员</a>
+			<a href="#">社区</a>
+			<a href="#">线下体验</a>
+			<a href="#">成套设计</a>
+		</div>
+	</div>
+</div>
+<!-- scetion -->
+<div class="sce">
+	<div class="scetion">
+		<div id="scetion-left"> 
 
+		</div>
+		<div class="scetion-right">
+			<div class="leide-one">
+				<div class="leide-one-a">
+					<img src="img/scetion-touxiang.png" alt="">
+				</div>
+				<p>hi~你好</p>
+				<form action="">
+					<input type="button" value="登录"">
+					<input type="button" value="注册">
+				</form>
+			</div>
+			<div class="leide-two">
+				<div class="leide-two-a">
+					<span></span>
+					<p>会员俱乐部</p>
+				</div>
+				<div class="leide-two-b">
+					<span></span>
+					<p>升级微店主</p>
+				</div>
+			</div>
+			<div class="leide-there">
+				<div class="leide-there-a">
+					<p>商城公告</p>
+					<p>更多</p>
+				</div>
+				<div class="leide-there-b">
+					<p>海南因台风订单配送受影响公告</p>
+					<p>海南因台风订单配送受影响公告</p>
+					<p>海南因台风订单配送受影响公告</p>
+					<p>海南因台风订单配送受影响公告</p>
+				</div>
+				<div class="leide-there-c"> 
+					<div class="leide-there-c-one">
+						<div class="leide-there-c-one-a">
+							<span></span>
+							<p>货到付款</p>
+						</div>
+						<div class="leide-there-c-one-b">
+							<span></span>
+							<p >超时免单</p>
+						</div>
+					</div>
+					<div class="leide-there-c-two">
+						<div class="leide-there-c-one-a">
+							<span></span>
+							<p>送装同步</p>
+						</div>
+						<div class="leide-there-c-one-b">
+							<span></span>
+							<p >全国联保</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="scetion-right-caidan">
+				<ul>
+					<li data-id="1"> <a>冰箱</a></li>
+					<li data-id="2"> <a>空调</a></li>
+					<li data-id="3"> <a>洗衣机</a></li>
+					<li data-id="4"> <a>电视</a></li>
+					<li data-id="5"> <a>热水器</a></li>
+					<li data-id="6"> <a>厨房电器</a></li>
+					<li data-id="7"> <a>冷柜</a></li>
+					<li data-id="8"> <a>智能产品</a></li>
+					<li data-id="9"> <a>净水机</a></li>
+					<li data-id="10"> <a>生活小家电</a></li>
+					<li data-id="11"> <a>厨房小电器</a></li>
+				</ul>
+			</div>
+			<div class="nav_right">
+				<div class="sub hide" data-id="1"></div>
+				<div class="sub hide" data-id="2"></div>
+				<div class="sub hide" data-id="3"></div>
+				<div class="sub hide" data-id="4"></div>
+				<div class="sub hide" data-id="5"></div>
+				<div class="sub hide" data-id="6"></div>
+				<div class="sub hide" data-id="7"></div>
+				<div class="sub hide" data-id="8"></div>
+				<div class="sub hide" data-id="9"></div>
+				<div class="sub hide" data-id="10"></div>
+				<div class="sub hide" data-id="11"></div>
+			</div>
+		</div>	
+
+
+
+
+
+
+	</div>
+</div>
+<!-- boa -->
+<div class="boz">
+	
+</div>
+<!-- huichang -->
+<div class="hui">
+	<div class="huichang">
+		<div class="huichang-bg">
+			<img src="img/huichang-one.png" alt="">
+		</div>
+		<div class="huichang-bg">
+			<img src="img/huichang-two.png" alt="">
+		</div>
+		<div class="huichang-bg">
+			<img src="img/huichang-there.png" alt="">
+		</div>
+		<div class="huichang-bg">
+			<img src="img/huichang-four.png" alt="">
+		</div>
+	</div>
+</div>
+<!-- tuijian -->
+<div class="tuijian">
+	<div class="jptj">
+		<div class="jptj-tou">
+			<span>
+				<img src="img/tuijian.png" alt="">
+			</span>
+			<p>精品推荐</p>
+		</div>
+		<div class="jptj-jiao">
+			<div class="jptj-left">
+				<img src="img/jptj-one.png" alt="">
+			</div>
+			<div class="jptj-right">
+				<div class="jptj-right-one">
+					<div class="jptj-right-one-a">
+						<img src="img/jptj-two.png" alt="">
+						<p>527升变频风冷无霜对开门冰箱</p>
+						<span>￥3299.00</span>
+					</div>
+					<div class="jptj-right-one-a">
+						<img src="img/jptj-there.png" alt="">
+						<p>527升变频风冷无霜对开门冰箱</p>
+						<span>￥3299.00</span>
+					</div>
+					<div class="jptj-right-one-a">
+						<img src="img/jptj-four.png" alt="">
+						<p>527升变频风冷无霜对开门冰箱</p>
+						<span>￥3299.00</span>
+					</div>
+				</div>
+				<div class="jptj-right-one  haha">
+					<div class="jptj-right-one-a">
+						<img src="img/jptj-five.png" alt="">
+						<p>527升变频风冷无霜对开门冰箱</p>
+						<span>￥3299.00</span>
+					</div>
+					<div class="jptj-right-one-a">
+						<img src="img/jptj-six.png" alt="">
+						<p>527升变频风冷无霜对开门冰箱</p>
+						<span>￥3299.00</span>
+					</div>
+					<div class="jptj-right-one-a">
+						<img src="img/jptj-seven.png" alt="">
+						<p>527升变频风冷无霜对开门冰箱</p>
+						<span>￥3299.00</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- sankuai -->
+<div class="san">
+	<div class="sankuai">
+		<div class="sankuai-one">
+			<div class="one-tou">
+				<p>新品首发</p>
+			</div>
+			<div class="one-boz">
+				<div class="hahahaha">
+					<span>|</span>
+					<h4>&nbsp;新品频道</h4>
+					<p>世界之所以绚丽多彩，源于对新的追求</p>
+				</div>
+				<img src="img/sankuai-one.png" alt="">
+			</div>
+			<div class="one-boz lelele">
+				<div class="hahahaha">
+					<span>|</span>
+					<h4>&nbsp;甄选专场</h4>
+					<p>甄选好物，用心生活</p>
+				</div>
+				<img src="img/sankuai-two.png" alt="">
+			</div>
+			<div class="one-jiao">
+				<div class="one-jiao-a"><img src="img/sankuai-there.png" alt=""></div>
+				<div class="one-jiao-a"><img src="img/sankuai-four.png" alt=""></div>
+				
+				
+			</div>
+		</div>
+		<div class="sankuai-one">
+			<div class="one-tou one-tou-two">
+				<p>我要定制</p>
+			</div>
+			<div class="two-boz">
+				<div>
+					<span>|</span>
+					<h4>&nbsp;定制</h4>
+					<p>互联定制，新生好物，生活起点。</p>
+				</div>
+				<img src="img/sankuai-five.png" alt="">
+				<a href="#">立即定制</a>
+			</div>
+			<div class="one-jiao">
+				<div class="one-jiao-a"><img src="img/sankuai-six.png" alt=""></div>
+				<div class="one-jiao-a"><img src="img/sankuai-seven.png" alt=""></div>
+				
+				
+			</div>
+		</div>
+		<div class="sankuai-one">
+			<div class="one-tou one-tou-there">
+				<p>帮您选</p>
+			</div>
+			<div class="there-tou">
+				<div class="there-tou-one">
+					<h4>海尔社区</h4>
+					<p>参与话题讨论，赢取精美好礼</p>
+					<img src="img/sankuai-eight.png">
+				</div>
+				<div class="there-tou-one">
+					<h4>会员俱乐部</h4>
+					<p>参与话题讨论，赢取精美好礼</p>
+					<img src="img/sankuai-nine.png">
+				</div>
+				<div class="there-tou-one">
+					<h4>知识堂</h4>
+					<p>参与话题讨论，赢取精美好礼</p>
+					<img src="img/sankuai-ten.png">
+				</div>
+				<div class="there-tou-one">
+					<h4>帮助中心</h4>
+					<p>参与话题讨论，赢取精美好礼</p>
+					<img src="img/sankuai-11.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ypzj -->
+<div class="ypzj">
+	<div class="youpin">
+		
+	</div>
+</div>	
+<!-- slide -->
+<div class="sli">
+	<div class="slide">
+		<div class="slide-tou">
+			<span><img src="img/slide-tou.png" alt=""></span>
+			<p>大家都在说</p>
+		</div>
+		<div class="slide-jiao">
+			<div class="swiper-container">
+	  			<div class="swiper-wrapper">
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-one.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-two.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-there.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-one.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-two.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-there.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-one.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	    			<div class="swiper-slide">
+	    				<div class="huad">
+	    					<div class="huad-top">
+	    						<img src="img/huad-two.png" alt="">
+	    					</div>
+	    					<div class="huad-jiao">
+	    						<a href="#">LS65a51 65英寸超清</a>
+	    						<span>￥3399.00</span>
+	    						<p>电视妹妹哒，攒劲的很</p>
+	    						<p>2018-06-09</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	 			</div>
+	 			<div class="swiper-pagination"></div>
+	 			<div class="swiper-button-next"></div>
+	  			<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- weini -->
+<div class="wn">
+	<div class="weini">
+		<div class="slide-tou">
+			<span><img src="img/weinin-one.png" alt=""></span>
+			<p>为您推荐</p>
+		</div>
+		<div class="weini-jiao">
+			<div class="weini-jiao-one">
+				<img src="img/weini-there.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-two.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-two.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-there.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-four.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-there.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-two.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-there.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-four.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+			<div class="weini-jiao-one">
+				<img src="img/weini-there.png" alt="">
+				<p>470升十字对开变频静音电冰箱</p>
+				<span>￥4699.00</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="lg">
+	<div class="leg">
+		<div class="leg-tou">
+			<div class="leg-tou-one">
+				<img src="img/leg-dt.png" alt="">
+				<p>24小时限时送达</p>
+				<p>全国1300个县支持24小时送货上门</p>
+			</div>
+			<div class="leg-tou-one">
+				<img src="img/leg-dt.png" alt="">
+				<p>24小时限时送达</p>
+				<p>全国1300个县支持24小时送货上门</p>
+			</div>
+			<div class="leg-tou-one">
+				<img src="img/leg-dt.png" alt="">
+				<p>24小时限时送达</p>
+				<p>全国1300个县支持24小时送货上门</p>
+			</div>
+			<div class="leg-tou-one">
+				<img src="img/leg-dt.png" alt="">
+				<p>24小时限时送达</p>
+				<p>全国1300个县支持24小时送货上门</p>
+			</div>
+		</div>
+		<div class="leg-jiao">
+			<div class="leg-jiao-left">
+				<dl class="help-item">
+					<dt>购物指南</dt>
+					<dd>注册登录</dd>
+					<dd>密码相关</dd>
+					<dd>购物流程</dd>
+					<dd>交易条款</dd>
+					<dd>品牌大全</dd>
+				
+				</dl>
+				<dl class="help-item">
+					<dt>购物指南</dt>
+					<dd>注册登录</dd>
+					<dd>密码相关</dd>
+					<dd>购物流程</dd>
+					<dd>交易条款</dd>
+					<dd>品牌大全</dd>
+				
+				</dl>
+				<dl class="help-item">
+					<dt>购物指南</dt>
+					<dd>注册登录</dd>
+					<dd>密码相关</dd>
+					<dd>购物流程</dd>
+					<dd>交易条款</dd>
+					<dd>品牌大全</dd>
+				
+				</dl>
+				<dl class="help-item">
+					<dt>购物指南</dt>
+					<dd>注册登录</dd>
+					<dd>密码相关</dd>
+					<dd>购物流程</dd>
+					<dd>交易条款</dd>
+					<dd>品牌大全</dd>
+				
+				</dl>
+				<dl class="help-item">
+					<dt>购物指南</dt>
+					<dd>注册登录</dd>
+					<dd>密码相关</dd>
+					<dd>购物流程</dd>
+					<dd>交易条款</dd>
+					<dd>品牌大全</dd>
+				
+				</dl>
+			</div>
+			<div class="leg-jiao-right">
+				<a href="#"><img src="img/leg-kf.png" alt="">在线客服</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
+<div class="fo">
+	<div class="footer">
+		<div class="footer-tou">
+			<a href="#">关于海尔</a>
+			<span>|</span>
+			<a href="#">售后服务</a>
+			<span>|</span>
+			<a href="#">投诉建议</a>
+			<span>|</span>
+			<a href="#">友情链接</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+		</div>
+		<p>网站备案/许可证号：鲁ICP备09096283号</p>
+		<p>Copyright©2000-2017 海尔集团电子商务有限公司 All Rights Reserved</p>
+		<img src="img/footer.png" alt="">
+	</div>
+</div>
+<div class="guding-one">
+	<a href="#">
+	<img src="img/guding-one.png" alt="">
+	</a>
+</div>
+<div class="guding-two">
+	<a href="#">
+	<img src="img/guding-two.png" alt="">
+	</a>
+</div>
+</body>
+<script type="text/javascript" src="js/swiper-4.3.2.min.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		// direction: 'vertical',
+    	loop: true,
+		autoplay: true,
+		slidesPerView : 4,
+		navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+	})
+</script>
 </body>
 </html>
+<script type="text/javascript" src="js/lbt.js"></script>
+<script>
+function $(id){
+	return document.getElementById(id);
+}
+window.onload=function(){
+	let hrefs = ["http://www.baidu.com","http://www.1000phone.com","http://www.taobao.com","http://www.jd.com","http://www.4399.com"];
+	let imgs = ["img/lb01.png","img/lb02.png","img/lb03.png","img/lb04.png","img/lb05.png"];
+	//boxDom,width,height,imgs,hrefs,timeSpace
+	new Slider($("scetion-left"),952,430, imgs,hrefs,3000);
+}
+</script>
