@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+<link rel="stylesheet" href="css/denglu.css">
+</head>
+<body>
+<!-- header -->
+<div class="he">
+	<div class="header">
+		<img src="img/loge.png" alt="">
+	</div>
+</div>
+<!-- zhongj -->
+<div class="zhongj">
+	<div class="zhongjian"> 
+		<div class="beijing"></div>
+		<div class="denglukuang">
+			<div class="denglukuang-tou">
+				<h2>欢迎登录海尔商城</h2>
+				<a href="#">免费注册></a>
+			</div>
+			<div class="denglukuang-shen">
+				<ul id="tab_t">
+					<li onclick="show(1)" class="act">普通登录</li>
+					<li onclick="show(2)">手机动态密码登录</li>
+				</ul>
+				<div id="tab_c">
+					<div class="denglukuang-shen-form">
+						<form>
+							<input type="text" placeholder="邮箱&nbsp;/&nbsp;手机">
+							<input type="password" placeholder="密码">
+							<a href="">忘记密码？</a>
+							<input type="button" value="登录">
+						</form>
+					</div>
+					<div class="denglukuang-shen-form hide">
+						<form>
+							<input type="text" placeholder="邮箱&nbsp;/&nbsp;手机">
+							<input type="password" placeholder="密码">
+							<span>获取验证码</span>
+							<input type="button" value="登录">
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="denglukuang-jiao">
+				<p>其他登录方式&nbsp;:</p>
+				<a href="#"><span></span>新浪微博</a>
+				<a href="#"><span></span>支付宝</a>
+				<a href="#"><span></span>网易</a>
+				<a href="#"><span></span>快捷通</a>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<script>
+	//根据序号切换选项卡，序号会传给data参数
+	function xuanze(data){
+		var liaar=document.getElementsByTagName("li");//取得所有li元素，也就是取得所有选项卡
+		for(var i=0;i<liaar.length;i++){//遍历所有li元素
+			liaar[i].className="";//把所有选项卡样式清除
+		}
+		liaar[data-1].className="act";//设置序号对应的选项卡样式为act样式
+		var tab_c=document.getElementById("tab_c");//取得包含所有内容层的DIV
+		var arrdiv=[];
+		for(var i in tab_c.childNodes){//循环tab_c的所有子元素
+			if(tab_c.childNodes[i].nodeType==1){//判断子元素是否是元素节点，判断是否是内容层
+				tab_c.childNodes[i].className="hide";//设置所有子元素节点样式为隐藏
+				arrdiv.push(tab_c.childNodes[i]);//将所有元素节点放置到一个数组中
+			}
+		}
+		arrdiv[data-1].className="";//设置对应的内容层样式为空，实现对应层显示效果
+	}
+</script>
+<script type="text/javascript">
+
+function show(ord){
+	//获取所有的li
+	var lis = document.getElementById("tab_t").children;
+	//清除所有li的样式
+	for(var i=0;i<lis.length;i++){
+		lis[i].className="";
+	}
+	//把当前li的样式设置为act
+	lis[ord-1].className = "act";
+	
+	var divs = document.getElementById("tab_c").children;
+	//把所有的div隐藏
+	for(var i=0;i<divs.length;i++){
+		divs[i].style.display = "none";
+	}
+	//让当前div显示
+	divs[ord-1].style.display = "block";
+}
+
+</script>
+<!-- footer -->
+<div class="fo">
+	<div class="footer">
+		<div class="footer-tou">
+			<a href="#">关于海尔</a>
+			<span>|</span>
+			<a href="#">售后服务</a>
+			<span>|</span>
+			<a href="#">投诉建议</a>
+			<span>|</span>
+			<a href="#">友情链接</a>
+			<span>|</span>
+			<a href="#">联系我们</a>
+		</div>
+		<p>网站备案/许可证号：鲁ICP备09096283号</p>
+		<p>Copyright©2000-2017 海尔集团电子商务有限公司 All Rights Reserved</p>
+		<img src="img/footer-one.png" alt="">
+	</div>
+</div>
+</body>
+</html>

@@ -12,10 +12,19 @@ gulp.task("sasss",function(){
 	.pipe(sass())
 	.pipe(gulp.dest("D:\\php\\WWW\\ehaier02\\css"));
 });
+gulp.task("dengluscss",function(){
+	gulp.src(["scss/denglu.scss"])
+	.pipe(sass())
+	.pipe(gulp.dest("D:\\php\\WWW\\ehaier02\\css"));
+});
+
 
 
 gulp.task("copyfile",function(){
 	gulp.src("index.html").pipe(gulp.dest("D:\\php\\WWW\\ehaier02"));
+});
+gulp.task("copyhtml",function(){
+	gulp.src("denglu.html").pipe(gulp.dest("D:\\php\\WWW\\ehaier02"));
 });
 
 
@@ -26,10 +35,6 @@ gulp.task("images",function(){
 });
 
 
-gulp.task("scssss",function(){
-	gulp.src("scss/**/*")
-	.pipe(gulp.dest("D:\\php\\WWW\\ehaier02\\css"));
-});
 
 
 
@@ -43,8 +48,9 @@ gulp.task("js",function(){
 
 gulp.task("watchall",function(){
 	gulp.watch("scss/index.scss",["sasss"]);
+	gulp.watch("scss/denglu.scss",["dengluscss"]);
 	gulp.watch("index.html",["copyfile"]);
+	gulp.watch("denglu.html",["copyhtml"]);
 	gulp.watch("img/**/*",["images"]);
 	gulp.watch("js/**/*",["js"]);
-	gulp.watch("scss/**/*",["scssss"]);
 });
