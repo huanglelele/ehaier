@@ -204,11 +204,11 @@ body{
 	width:640px;
 	height:430px;
 }
-
 .scetion-right-caidan{
 	width:193px;
 	height:430px;
 	background:rgba(0,0,0,0.5);
+	float: left;
 }
 .scetion-right-caidan ul{
 	width:100%;
@@ -222,6 +222,21 @@ body{
 	font-size: 14px;
 	text-indent: 14px;
 }
+.scetion-right-none{
+	width:447px;
+	height:430px;
+	float: left;
+	position: relative;
+}
+.chulai{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display:none;
+}
+
 .scetion-right-caidan ul li:hover{
 	background:white;
 	color:black;
@@ -741,10 +756,128 @@ margin-top: 45px;
 	height:398px;
 }
 .youpin{
+	position: relative;	
 	width:1190px;
 	height:398px;
 	margin: 30px auto;
-	background: black;
+	background: white;
+}
+.youpin ul{
+	width:1016px;
+	height:46px;
+	margin-left: 156px;
+}
+.youpin ul li span{
+	width:1px;
+	height:23px;
+	display: block;
+	float: right;
+	background: #e0e0e0;
+	margin-top: 12px;
+}
+.youpin p{
+	float: left;
+	width:146px;
+	height:56px;
+	color:white;
+	text-indent: 55px;
+	line-height: 56px;
+	background: #2979ff;
+	position: absolute;
+	left: 0;
+	top: -10px;
+	font-size: 16px;
+	border-radius: 10px 10px 0 0;
+}
+.youpin p img{
+position: absolute;
+left:13px;
+top:14px;
+}
+.youpin ul li{
+	list-style: none;
+	font-size: 12px;
+	color:#666;
+	float: left;
+	width:126px;
+	height:100%;
+	line-height:46px;
+	text-align: center;
+	border-bottom:2px solid #eaeaea;
+	cursor:pointer;
+}
+
+.youpin ul .act{
+	border-color:#2979ff ;
+	color:#2979ff;
+}
+.youpin-kt{
+	width:1160px;
+	height:331px;
+	margin:10px;
+}
+.imgs{
+	float: left;
+	width:230px;
+	height:332px;
+	overflow: hidden;
+}
+.imgs img{
+	transition:all 0.5s;
+}
+.imgs:hover img{
+	transform:scale(1.1);
+}
+.kts{
+	float: left;
+	margin: 10px;
+}
+.hide{
+	display:none;
+}
+.youpin-tu-one{
+	width:910px;
+	height:151px;
+	border-bottom: 1px solid #eaeaea;
+}
+.youpin-xiao{
+width:226px;
+height:150px;
+border-right: 1px solid #eaeaea;
+position: relative;
+float: left;
+}
+.abcd{
+	border:none;
+}
+.youpin-xiao a{
+	color:#666;
+	font-size: 12px;
+	position: absolute;
+	top: 12px;
+	left:30px;
+}
+.youpin-xiao span{
+	color:#ff4949;
+	font-size: 14px;
+	position: absolute;
+	left:30px;
+	top:56px;
+}
+.youpin-xiao img{
+	
+	transition:all 0.5s;
+}
+.huang{
+	overflow: hidden;
+	height:110px;
+	width:110px;
+	position: absolute;
+	left:106px;
+	top:30px;
+}
+.youpin-xiao:hover img{
+	transform:scale(1.1);
 }
 // slide
 .sli{
@@ -1029,6 +1162,7 @@ line-height: 36px;
 	right:15px;
 	bottom:120px;
 	opacity: 0.7;
+	z-index: 999;
 }
 .guding-one:hover{
 	opacity: 1;
@@ -1045,7 +1179,9 @@ line-height: 36px;
 	right:15px;
 	bottom:50px;
 	opacity: 0.7;
-}
+	
+	z-index: 999;
+	}
 .guding-two:hover{
 	opacity: 1;
 }

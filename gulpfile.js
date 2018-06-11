@@ -10,32 +10,32 @@ var sass = require("gulp-sass");
 gulp.task("sasss",function(){
 	gulp.src(["scss/index.scss"])
 	.pipe(sass())
-	.pipe(gulp.dest("F:\\ehaier02\\css"));
+	.pipe(gulp.dest("D:\\php\\WWW\\ehaier02\\css"));
 });
 
 
 gulp.task("copyfile",function(){
-	gulp.src("index.html").pipe(gulp.dest("F:\\ehaier02"));
+	gulp.src("index.html").pipe(gulp.dest("D:\\php\\WWW\\ehaier02"));
 });
 
 
 
 gulp.task("images",function(){
 	gulp.src("img/**/*")
-	.pipe(gulp.dest("F:\\ehaier02\\img"));
+	.pipe(gulp.dest("D:\\php\\WWW\\ehaier02\\img"));
 });
 
 
 gulp.task("scssss",function(){
 	gulp.src("scss/**/*")
-	.pipe(gulp.dest("F:\\ehaier02\\css"));
+	.pipe(gulp.dest("D:\\php\\WWW\\ehaier02\\css"));
 });
 
 
 
 gulp.task("js",function(){
 	gulp.src("js/**/*")
-	.pipe(gulp.dest("F:\\ehaier02\\js"));
+	.pipe(gulp.dest("D:\\php\\WWW\\ehaier02\\js"));
 });
 
 
