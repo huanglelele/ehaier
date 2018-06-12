@@ -267,10 +267,9 @@ body{
 	line-height: 24px;
 	text-align: center;
 }
-.leide-one form{
-	text-align: center;
-}
-.leide-one form input{
+.leide-one a{
+	display: block;
+	float: left;
 	background: #2979ff;
 	color:white;
 	font-size: 12px;
@@ -281,6 +280,10 @@ body{
 	border:none;
 	border-radius: 3px;
 	margin-left: 12px;
+	cursor: pointer;
+}
+.leide-one a:nth-child(3){
+	margin-left: 65px;
 }
 .leide-two{
 	width:100%;

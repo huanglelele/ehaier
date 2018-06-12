@@ -29,18 +29,21 @@
 				<div id="tab_c">
 					<div class="denglukuang-shen-form">
 						<form>
-							<input type="text" placeholder="邮箱&nbsp;/&nbsp;手机">
-							<input type="password" placeholder="密码">
+							<input id="userId" type="text" placeholder="邮箱&nbsp;/&nbsp;手机">
+							<input id="userpass" type="password" placeholder="密码">
 							<a href="">忘记密码？</a>
-							<input type="button" value="登录">
+							<input id="btnLogin" type="button" value="登录">
+							<span id="yonghuming"></span>
+							<span id="mima"></span>
 						</form>
 					</div>
 					<div class="denglukuang-shen-form hide">
 						<form>
-							<input type="text" placeholder="邮箱&nbsp;/&nbsp;手机">
-							<input type="password" placeholder="密码">
-							<span>获取验证码</span>
+							<input id="phoneId" type="text" placeholder="手机">
+							<input id="userpass" type="password" placeholder="密码">
+							<span class="huoquyanzhengma">获取验证码</span>
 							<input type="button" value="登录">
+							<span id="shoujihao"></span>
 						</form>
 					</div>
 				</div>
@@ -118,3 +121,57 @@ function show(ord){
 </div>
 </body>
 </html>
+<script type="text/javascript">
+
+function $(id){
+	return document.getElementById(id);
+}
+
+window.onload = function(){
+	//用户名格式要求。（只能出现字母、数字、下划线，必须包含字母和数字，不能有特殊符号，不能以数字开头，长度6-16）
+	$("userId").onblur = function(){
+		//用户名格式的规则：只能出现字母、数字、下划线，必须包含字母和数字，不能有特殊符号，不能以数字开头，长度6-16
+		var reg =  /^\w+@[a-zA-Z0-9]+\.(com|cn|net|top|vip)$/;
+		if(reg.test(this.value)==false){
+			$("yonghuming").innerHTML = "亲，用户名格式不正确";
+		}else{
+			$("yonghuming").innerHTML = "√";
+		}
+	}
+	$("phoneId").onblur = function(){
+		//手机的规则：11位纯数字，1开头，第二位不能是0,1,2,6
+		//第一位是1，第二位是数字（但不能是0,1,2,6），后面九位数字
+		
+		var reg = /^1[^0126]\d{9}$/;
+		if(reg.test(this.value)==false){
+			$("shoujihao").innerHTML = "亲，手机号码格式不正确";
+		}else{
+			$("shoujihao").innerHTML = "√";
+		}
+	}
+
+
+	$("btnLogin").onclick=function(){
+		//1创建对象
+		let xhr = new XMLHttpRequest();
+		//2设置请求参数
+		xhr.open("post","denglu.php",true);//用post的请求方式 open下必须加那句话
+		//3设置回调函数
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				if(xhr.responseText=="1"){
+					
+			 		alert("亲，登陆成功！");
+				}else{
+				
+			 		alert("亲，用户名或者密码不对，请重新输入！");
+				}
+			}
+		}
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		//4、发送请求
+		let sendstr = "username="+$("userId").value+"&userpass="+$("userpass").value;
+		xhr.send(sendstr);
+	}
+}
+</script>

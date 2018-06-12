@@ -157,16 +157,24 @@ body{
 .denglukuang-shen-form form a:hover{
 	text-decoration:underline;
 }
-.denglukuang-shen-form span{
+.huoquyanzhengma{
 	color:#32beff;
-	font-size: 12px;
-	position: absolute;
-	left:298px;
-	top:206px;
-	cursor:pointer;
+	cursor: pointer;
 }
-.denglukuang-shen-form span:hover{
+.huoquyanzhengma:hover{
 	color:#005aaa;
+}
+#yonghuming{
+	display: block;width:100px;height:32px;
+	position: absolute;
+	left:376px;
+	top:145px;
+}
+#shoujihao{
+	display: block;width:100px;height:32px;
+	position: absolute;
+	left:376px;
+	top:145px;
 }
 .hide{
 	display: none;
