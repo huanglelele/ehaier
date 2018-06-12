@@ -19,7 +19,38 @@
 
 	<div class="shen">
 		<div class="shen-left">
-			
+			<form method="post" action="zhuce.php">
+				<div class="yanzheng">
+					<p>邮箱：</p> 
+					<input id="useremail" type="email" name="youemail"><br>
+					<span id="emailid"></span>
+				</div>
+				<div class="yanzheng">
+					<p>设置密码：</p>   
+					<input id="userpass" type="password" name="youpass"><br>
+					<span id="passid"></span>
+				</div>
+				<div class="yanzheng">
+					<p>确认密码：</p>   
+					<input id="userpass2" type="password"><br>
+					<span id="passid2"></span>
+				</div>
+				<div class="yanzheng">
+					<p>手机号：</p>     
+					<input id="userphone" type="text"><br>
+					<span id="phoneid"></span>
+				</div>
+				<div class="yanzheng">
+					<p>验证码：</p>     
+					<input type="text"><br> 
+					<a href="">发送验证码</a>
+				</div>
+				<input type="checkbox" style="width:10px;height:10px;" class="fuxuan">
+				<i>
+					我已阅读并同意<a href="">《海尔商城用户服务协议》 </a>和<a href="">《快捷通服务协议</a>》
+				</i>
+				<input id="btn01" type="submit" value="立即注册">					 
+			</form>
 		</div>
 		<div class="shen-right">
 			<h3>什么是顺逛微店主？</h3>
@@ -59,3 +90,86 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+
+function $(id){
+	return document.getElementById(id);
+}
+
+window.onload = function(){
+
+	
+
+	
+	$("useremail").onblur = function(){
+		//邮箱地址的规则：以若干个数字字母下划线开头@若干个数字字母.以com或者cn或者net等结尾
+		if($("useremail").value!=""){
+			var reg = /^\w+@[a-zA-Z0-9]+\.(com|cn|net|top|vip)$/;
+				if(reg.test(this.value)==false){
+					$("emailid").innerHTML = "亲，邮箱地址格式不正确";
+				}else{
+					$("emailid").innerHTML = "√";
+			}
+		}else{
+			$("emailid").innerHTML = "";
+		}
+		
+	}
+
+
+
+	$("userpass").onblur=function(){
+
+		if($("userpass").value!=""){
+			var reg=/^[A-Za-z]+[0-9]+[A-Za-z0-9]*|[0-9]+[A-Za-z]+[A-Za-z0-9]*$/g;
+				if(reg.test(this.value)==false){
+					$("passid").innerHTML = "亲，密码由6-16位数组和字母组成";
+				}else{
+					$("passid").innerHTML = "√";
+			}
+		}else{
+			$("passid").innerHTML = "";
+		}
+		
+	}
+
+
+
+	$("userpass2").onblur=function(){
+
+
+		if($("userpass2").value!=""){
+			if($("userpass2").value==$("userpass").value){
+					$("passid2").innerHTML = "√";
+				}else{
+					$("passid2").innerHTML = "亲，两次输入密码不一样";
+					}
+			}else{
+				$("passid2").innerHTML = "";
+			}
+		
+		}	
+
+
+	$("userphone").onblur=function(){
+
+		if($("userphone").value!=""){
+			var reg = /^1[^0126]\d{9}$/;
+				if(reg.test(this.value)==false){
+					$("phoneid").innerHTML = "亲，手机号码输入有误";
+				}else{
+					$("phoneid").innerHTML = "√";
+			}
+		}else{
+			$("phoneid").innerHTML = "";
+		}
+		
+	}
+
+
+	
+	
+
+}
+
+</script>

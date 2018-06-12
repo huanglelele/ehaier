@@ -40,6 +40,10 @@ gulp.task("zhucehtml",function(){
 gulp.task("dengluphp",function(){
 	gulp.src("denglu.php").pipe(gulp.dest("D:\\php\\WWW\\ehaier02"));
 });
+gulp.task("zhucephp",function(){
+	gulp.src("zhuce.php").pipe(gulp.dest("D:\\php\\WWW\\ehaier02"));
+});
+
 
 
 
@@ -70,4 +74,5 @@ gulp.task("watchall",function(){
 	gulp.watch("zhuce.html",["zhucehtml"]);
 	gulp.watch("scss/zhuce.scss",["zhucescss"]);
 	gulp.watch("denglu.php",["dengluphp"]);
+	gulp.watch("zhuce.php",["zhucephp"]);
 });

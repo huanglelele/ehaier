@@ -160,22 +160,12 @@ body{
 .huoquyanzhengma{
 	color:#32beff;
 	cursor: pointer;
+	font-size: 12px;
 }
 .huoquyanzhengma:hover{
 	color:#005aaa;
 }
-#yonghuming{
-	display: block;width:100px;height:32px;
-	position: absolute;
-	left:376px;
-	top:145px;
-}
-#shoujihao{
-	display: block;width:100px;height:32px;
-	position: absolute;
-	left:376px;
-	top:145px;
-}
+
 .hide{
 	display: none;
 }
